@@ -26,12 +26,11 @@ def mc(windowTitle, game, correct, qNum):
 startLayout = [[sg.Text("Trivia game")], [sg.Button("Start")]]
 
 
-# Create the window
+
 window = sg.Window("Trivia Game", startLayout,margins=(500, 300))
 
 event, values = window.read()
-# End program if user closes window or
-# presses the OK button
+
 correct = 0 
 qNum = 0
 if event == "Start":
